@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+form.pricing-form {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  form.pricing-form::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.pricing-form-group {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .pricing-form-group:last-child {
+    margin-right: 0; }
+  .pricing-form-group input {
+    width: 90%; }
+  .pricing-form-group label {
+    font-size: 14px; }

@@ -1,0 +1,19 @@
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "node_modules/bourbon-neat/app/assets/stylesheets/neat";
+
+form.pricing-form {
+    @include outer-container;
+}
+
+.pricing-form-group {
+
+    @include span-columns(6);
+
+    input {
+        width: 90%;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
