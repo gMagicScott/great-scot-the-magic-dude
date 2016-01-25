@@ -143,6 +143,12 @@ html {
   outline: 0;
 }
 
+.crmagicform input[type=checkbox] {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
 .crmagicform textarea {
   font: 13px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;

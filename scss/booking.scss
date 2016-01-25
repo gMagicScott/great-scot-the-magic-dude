@@ -57,6 +57,17 @@ $max-width: 940px;
         }
     }
 
+    // .inline-checkbox {
+    //     width: 100%;
+    //     label {
+    //         // position: relative;
+    //         margin: 0 auto;
+    //         display: block;
+    //         bottom: 1px;
+    //         vertical-align: middle;
+    //     }
+    // }
+
     input,
     select {
         font: 13px HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -69,6 +80,12 @@ $max-width: 940px;
         border: 1px solid #ccc;
         border-radius: 6px;
         outline: 0;
+    }
+
+    input[type=checkbox] {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
     }
 
 
