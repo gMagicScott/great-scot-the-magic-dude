@@ -147,6 +147,14 @@ html {
   display: inline-block;
   width: 18px;
   height: 18px;
+  position: relative;
+  top: 4px;
+}
+
+.crmagicform input[type=number]::-webkit-inner-spin-button,
+.crmagicform input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .crmagicform textarea {
