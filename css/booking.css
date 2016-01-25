@@ -165,7 +165,13 @@ html {
 }
 
 .crmagicform > .form-group {
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+@media (min-width: 940px) {
+  .crmagicform > .form-group {
+    margin-top: 20px;
+  }
 }
 
 #coolsubmit {
