@@ -1,0 +1,197 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.crmagicform {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crmagicform::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.crmagicform .sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.crmagicform .form-row {
+  display: block;
+}
+
+.crmagicform .form-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.crmagicform .half {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.crmagicform .half:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 940px) {
+  .crmagicform .half {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .crmagicform .half:last-child {
+    margin-right: 0;
+  }
+}
+
+.crmagicform .city {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.crmagicform .city:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 940px) {
+  .crmagicform .city {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .crmagicform .city:last-child {
+    margin-right: 0;
+  }
+}
+
+.crmagicform .state {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.crmagicform .state:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 940px) {
+  .crmagicform .state {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .crmagicform .state:last-child {
+    margin-right: 0;
+  }
+}
+
+.crmagicform .zip {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.crmagicform .zip:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 940px) {
+  .crmagicform .zip {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .crmagicform .zip:last-child {
+    margin-right: 0;
+  }
+}
+
+.crmagicform input,
+.crmagicform select {
+  font: 13px HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  color: #777;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: 0;
+}
+
+.crmagicform textarea {
+  font: 13px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  color: #777;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: 0;
+}
+
+.crmagicform label {
+  font-size: 14px;
+}
+
+.crmagicform > .form-group {
+  margin-top: 20px;
+}
+
+#coolsubmit {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  float: center;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  color: #fff;
+  border-width: 0;
+  border-color: #fff;
+  border-radius: 6px;
+  background: #09f;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5551dd), color-stop(100%, #5551dd));
+  background: -webkit-linear-gradient(top, #5551dd 0%, #5551dd 100%);
+  background: linear-gradient(top, #5551dd 0%, #5551dd 100%);
+}
+
+#coolsubmit:hover {
+  background: -webkit-linear-gradient(to bottom, #6864dc 0%, #6864dc 100%);
+  background: -webkit-linear-gradient(top, #6864dc 0%, #6864dc 100%);
+  background: linear-gradient(to bottom, #6864dc 0%, #6864dc 100%);
+}
+
+#coolsubmit:active {
+  background: -webkit-linear-gradient(to bottom, #5551dd 0%, #5551dd 100%);
+  background: -webkit-linear-gradient(top, #5551dd 0%, #5551dd 100%);
+  background: linear-gradient(to bottom, #5551dd 0%, #5551dd 100%);
+}
+
+#coolsubmit:focus {
+  outline: none;
+}

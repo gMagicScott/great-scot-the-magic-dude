@@ -1,0 +1,143 @@
+$max-width: 940px;
+
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "node_modules/bourbon-neat/app/assets/stylesheets/neat";
+
+.crmagicform {
+    @include outer-container;
+
+    .sr-only {
+        position: absolute;
+
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+
+        border: 0;
+    }
+
+
+    .form-row {
+        @include row;
+    }
+
+    .half {
+        @include span-columns(12);
+
+        @media (min-width: 940px) {
+            @include span-columns(6);
+        }
+    }
+
+    .city {
+        @include span-columns(12);
+
+        @media (min-width: 940px) {
+            @include span-columns(6);
+        }
+    }
+
+    .state {
+        @include span-columns(12);
+
+        @media (min-width: 940px) {
+            @include span-columns(2);
+        }
+    }
+
+    .zip {
+        @include span-columns(12);
+
+        @media (min-width: 940px) {
+            @include span-columns(4);
+        }
+    }
+
+    input,
+    select {
+        font: 13px HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+
+        color: #777;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: 0;
+    }
+
+
+    textarea {
+        font: 13px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        
+        color: #777;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: 0;
+    }
+
+
+
+    label {
+        font-size: 14px;
+    }
+
+    & > .form-group {
+        margin-top: 20px;
+    }
+    
+}
+
+#coolsubmit {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    float: center;
+
+    width: 300px;
+    height: 50px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-width: 0;
+    border-color: #fff;
+    border-radius: 6px;
+    background: #09f;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5551dd), color-stop(100%, #5551dd));
+    background: -webkit-linear-gradient(top, #5551dd 0%, #5551dd 100%);
+    background:    -moz-linear-gradient(top, #5551dd 0%, #5551dd 100%);
+    background:      -o-linear-gradient(top, #5551dd 0%, #5551dd 100%);
+    background:     -ms-linear-gradient(top, #09f 0%, #5551dd 100%);
+    background:         linear-gradient(top, #5551dd 0%, #5551dd 100%);
+}
+
+#coolsubmit:hover {
+    background: -webkit-linear-gradient(to bottom, #6864dc 0%, #6864dc 100%);
+    background:    -moz-linear-gradient(to bottom, #0078ff 0%, #6864dc 100%);
+    background:      -o-linear-gradient(to bottom, #6864dc 0%, #6864dc 100%);
+    background:     -ms-linear-gradient(to bottom, #6864dc 0%, #6864dc 100%);
+    background:         linear-gradient(to bottom, #6864dc 0%, #6864dc 100%);
+}
+
+#coolsubmit:active {
+    background: -webkit-linear-gradient(to bottom, #5551dd 0%, #5551dd 100%);
+    background:    -moz-linear-gradient(to bottom, #06f 0%, #5551dd 100%);
+    background:      -o-linear-gradient(to bottom, #5551dd 0%, #5551dd 100%);
+    background:     -ms-linear-gradient(to bottom, #5551dd 0%, #5551dd 100%);
+    background:         linear-gradient(to bottom, #5551dd 0%, #5551dd 100%);
+}
+
+#coolsubmit:focus {
+    outline: none;
+}
